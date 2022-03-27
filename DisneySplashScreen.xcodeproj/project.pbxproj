@@ -17,6 +17,7 @@
 		437F094327E9B26300446AF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437F091927E9B26100446AF8 /* ContentView.swift */; };
 		437F094427E9B26300446AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437F091A27E9B26300446AF8 /* Assets.xcassets */; };
 		437F094527E9B26300446AF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437F091A27E9B26300446AF8 /* Assets.xcassets */; };
+		43EA67AA27E9B4A3007B27AC /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EA67A927E9B4A3007B27AC /* SplashScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		436B2F5727F0677400C4E7DC /* DisneySplashScreen--iOS--Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "DisneySplashScreen--iOS--Info.plist"; sourceTree = "<group>"; };
 		437F091827E9B26100446AF8 /* DisneySplashScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisneySplashScreenApp.swift; sourceTree = "<group>"; };
 		437F091927E9B26100446AF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		437F091A27E9B26300446AF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,7 @@
 		437F093827E9B26300446AF8 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437F093C27E9B26300446AF8 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		437F093E27E9B26300446AF8 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		43EA67A927E9B4A3007B27AC /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 		437F091227E9B26100446AF8 = {
 			isa = PBXGroup;
 			children = (
+				436B2F5727F0677400C4E7DC /* DisneySplashScreen--iOS--Info.plist */,
 				437F091727E9B26100446AF8 /* Shared */,
 				437F092627E9B26300446AF8 /* macOS */,
 				437F092F27E9B26300446AF8 /* Tests iOS */,
@@ -97,6 +101,7 @@
 		437F091727E9B26100446AF8 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				43EA67A827E9B485007B27AC /* View */,
 				437F091827E9B26100446AF8 /* DisneySplashScreenApp.swift */,
 				437F091927E9B26100446AF8 /* ContentView.swift */,
 				437F091A27E9B26300446AF8 /* Assets.xcassets */,
@@ -139,6 +144,14 @@
 				437F093E27E9B26300446AF8 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		43EA67A827E9B485007B27AC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				43EA67A927E9B4A3007B27AC /* SplashScreen.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43EA67AA27E9B4A3007B27AC /* SplashScreen.swift in Sources */,
 				437F094227E9B26300446AF8 /* ContentView.swift in Sources */,
 				437F094027E9B26300446AF8 /* DisneySplashScreenApp.swift in Sources */,
 			);
@@ -467,9 +481,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DisneySplashScreen--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -496,9 +510,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "DisneySplashScreen--iOS--Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
