@@ -1,4 +1,5 @@
-# SplashScreen(Disney)
+# SplashScreen(Disney) - Toy Project
+
 
 ![Disney_Splashscreen](https://user-images.githubusercontent.com/114594496/227917193-69d281d8-5936-4d91-93cc-59d58858fb8a.gif)
 
